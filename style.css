@@ -75,6 +75,7 @@ h1 {
     right: 20vw;
     rotate: 30deg;
     z-index: -1;
+    transition: 300ms;
 }
 
 #camContainer:hover {
@@ -252,16 +253,21 @@ p.name{
     margin: auto;
     padding-top: 1vh;
     padding-bottom: 2vh;
-    padding-left: 1vh;
-    padding-right: 1vh;
+    padding-left: 20vh;
+    padding-right: 20vh;
 }
 
 #qualifyContainer h3{
+    font-size: 4vh;
+    text-decoration: underline;
+}
+
+#qualifyContainer li{
     font-size: 3vh;
 }
 
 #qualifyContainer a{
-    font-size: 2vh;
+    font-size: 4vh;
     color: #81b694;
 }
 
