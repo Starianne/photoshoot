@@ -3,16 +3,19 @@ const canvas = document.getElementById('canvas');
 const photo = document.getElementById('photo');
 const cameraBtn = document.getElementById('cameraBtn');
 const downloadBtn = document.getElementById('downloadBtn');
+const onBtn = document.getElementById('onBtn');
 
+let stream;
 downloadBtn.disabled = true;
-
-navigator.mediaDevices.getUserMedia({ video: true })
-  .then(stream => {
+onBtn.addEventListener('click', async() => {
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({ video: true });
     video.srcObject = stream;
-  })
-  .catch(err => {
-    console.error("Camera access denied:", err);
-  });
+    await video.play();
+  } catch (err) {
+    console.error("Camera access denied!", err);
+  }
+});
 
 cameraBtn.addEventListener('click', () => {
     const context = canvas.getContext('2d');
