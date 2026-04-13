@@ -15,18 +15,17 @@ navigator.mediaDevices.getUserMedia({ video: true })
   });
 
 cameraBtn.addEventListener('click', () => {
-    setTimeout(() => {
-        const context = canvas.getContext('2d');
+    const context = canvas.getContext('2d');
 
-        canvas.width = video.videoWidth;
-        canvas.height = video.videoHeight;
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
 
-        context.drawImage(video, 0, 0);
 
-        const dataURL = canvas.toDataURL('image/png');
-        photo.src = dataURL;
-        downloadBtn.disabled = false;
-    }, 3000);
+    context.drawImage(video, 0, 0);
+
+    const dataURL = canvas.toDataURL('image/png');
+    photo.src = dataURL;
+    downloadBtn.disabled = false;
 
 });        
 

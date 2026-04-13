@@ -4,54 +4,82 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Photoshoot!</title>
-        <script src="rsvp.js" defer></script>
         <script src="camera.js" defer></script>
         <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body>
-        <div>
+        <div id="hcflag">
             <a href="https://hackclub.com/">
                 <img src="imgs/flag-orpheus-top.svg" alt="link to hackclub website"/>
             </a>
         </div>
-        <div>
+        <div id="titleContainer">
             <h1>Photoshoot!</h1>
-        </div>
-        <div>
-            <img src="imgs/camera.svg"/>
-        </div>
-        <div>
+            <div id="camContainer">
+                <img src="imgs/camera.svg"/>
+            </div>
+        </div>           
+
+        <div id="whatIsContainer">
+        <div id="polaroidContainer">
             <img src="imgs/polaroid.svg"/>
-        </div>
-        <div>
+        </div>  
+        <div id="whatIsText">          
             <h2>What is this?</h2>
             <p>This is Photoshoot! A You Ship We Ship, where you make an online photobooth, and we send you prizes for it!</p>
-            <button>rsvp</button>
         </div>
-        <div>
-            <h3>The prizes!!</h3>
-            <div>
-                <p>for projects with 1-2 hours:</p>
-                <img src="imgs/stickersheet.svg"/>
-            </div>
-            <div>
-                <p>for projects with 5-6 hours</p>
-                <img src="imgs/sdcard.png"/>
-            </div>
-            <div>
-                <p>for projects with 10-12+ hours</p>
-                <img src="imgs/digicam.png"/>
-            </div>
         </div>
-        <div>
-            <h3>How do I do this?</h3>
-            <p>You could make a website or app, any sort of software that acts as a photobooth</p>
-            <h3>What if I don't really know how to code or what I'm doing?</h3>
-            <p>I would recommend looking at tutorials online.</p>
-            <p>Youtube and the internet is a great resource, look around!</p>
+        <div id="centerBtn">
+            <button id="rsvp">RSVP</button>   
+        </div>  
+
+        <div id="howContainer">
+            <div id="howContainerImgO">
+                <img src="imgs/orpheusWorry.svg"/>
+            </div>
+            <div id="howContainerText">
+                <h3>"How do I do this?"</h3>
+                <p>You could make a website or app, any sort of software that acts as a photobooth</p>
+                <h3 >"What if I don't really know how to code or what I'm doing?"</h3>
+                <p>I would recommend looking at tutorials online.</p>
+                <p>Youtube and the internet are great resources, look around!</p>
+            </div>
+            <div id="howContainerImgP">
+                <img src="imgs/polaroidWorry.svg"/>
+            </div>
         </div>
 
-        <div>
+        <div id="photobooth">
+            <h3>Here's a little demo:</h3>
+            <video id="video" autoplay playsinline></video>
+            <button id="cameraBtn">Take a photo!</button>
+            <canvas id="canvas"></canvas>
+            <img src="imgs/placeholder.svg" id="photo" alt="Your photo will show up here"/>
+            <button id="downloadBtn">Download your photo!</button>
+        </div>
+
+        <div id="prizeContainer">
+            <h3>The prizes!!</h3>
+            <div id="prizes">
+                <div class="prize">
+                    <p>projects with 1-2 hours:</p>
+                    <img src="imgs/stickersheet.svg"/>
+                    <p class="name">a sticker sheet</p>
+                </div>
+                <div class="prize">
+                    <p>projects with 5-6 hours</p>
+                    <img src="imgs/sdcard.png"/>
+                    <p class="name">a 32GB sd card</p>
+                </div>
+                <div class="prize">
+                    <p>projects with 10-12+ hours</p>
+                    <img src="imgs/digicam.png"/>
+                    <p class="name">a digital camera</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="qualifyContainer">
             <h3>To qualify for prizes you need:</h3>
             <ul>
             <li>a project that everyone can see</li>
@@ -61,17 +89,8 @@
             <li>AI usage < 20%</li>
         </ul>
         </div>
-
-        <div>
-            <h3>Here's a little demo:</h3>
-            <video id="video" autoplay playsinline></video>
-            <button id="cameraBtn">Take a photo!</button>
-            <canvas id="canvas"></canvas>
-            <img id="photo" alt="Your photo will show up here"/>
-            <button id="downloadBtn">Download your photo!</button>
-        </div>
-        <div>
-            <p>important div stuff for when this goes up</p>
+        <div id="end">
+            <p>Enjoy!</p>
         </div>
     </body>
 </html>
