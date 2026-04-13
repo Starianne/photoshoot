@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Noto";
+    src: url(/photoshoot/font/NotoSans-VariableFont_wdth,wght.ttf) format("truetype");
+}
+
+*{
+    font-family: "Noto";
+}
+
+canvas {
+    display: none;
+}
+
+body {
+    background-color: #C7976E;
+}

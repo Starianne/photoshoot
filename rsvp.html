@@ -4,12 +4,15 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Photoshoot!</title>
-        <script src="" defer></script>
+        <script src="rsvp.js" defer></script>
+        <script src="camera.js" defer></script>
         <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body>
         <div>
-            <img src="imgs/flag-orpheus-top.svg"/>
+            <a href="https://hackclub.com/">
+                <img src="imgs/flag-orpheus-top.svg" alt="link to hackclub website"/>
+            </a>
         </div>
         <div>
             <h1>Photoshoot!</h1>
@@ -18,9 +21,27 @@
             <img src="imgs/camera.svg"/>
         </div>
         <div>
+            <img src="imgs/polaroid.svg"/>
+        </div>
+        <div>
             <h2>What is this?</h2>
             <p>This is Photoshoot! A You Ship We Ship, where you make an online photobooth, and we send you prizes for it!</p>
             <button>rsvp</button>
+        </div>
+        <div>
+            <h3>The prizes!!</h3>
+            <div>
+                <p>for projects with 1-2 hours:</p>
+                <img src="imgs/stickersheet.svg"/>
+            </div>
+            <div>
+                <p>for projects with 5-6 hours</p>
+                <img src="imgs/sdcard.png"/>
+            </div>
+            <div>
+                <p>for projects with 10-12+ hours</p>
+                <img src="imgs/digicam.png"/>
+            </div>
         </div>
         <div>
             <h3>How do I do this?</h3>
@@ -30,11 +51,27 @@
             <p>Youtube and the internet is a great resource, look around!</p>
         </div>
 
-        <div>Here's a little demo:</div>
-        <video autoplay playsinline></video>
-        <button id="cameraBtn">Take a photo!</button>
-        <canvas></canvas>
-        <img id="photo" alt="Your photo will show up here"/>
+        <div>
+            <h3>To qualify for prizes you need:</h3>
+            <ul>
+            <li>a project that everyone can see</li>
+            <li>Your project can take a picture and download it</li>
+            <li>hours tracked with <a href="https://hackatime.hackclub.com/">hackatime</a> for code</li>
+            <li>and <a href="https://lapse.hackclub.com/">lapse</a> for art</li>
+            <li>AI usage < 20%</li>
+        </ul>
+        </div>
 
+        <div>
+            <h3>Here's a little demo:</h3>
+            <video id="video" autoplay playsinline></video>
+            <button id="cameraBtn">Take a photo!</button>
+            <canvas id="canvas"></canvas>
+            <img id="photo" alt="Your photo will show up here"/>
+            <button id="downloadBtn">Download your photo!</button>
+        </div>
+        <div>
+            <p>important div stuff for when this goes up</p>
+        </div>
     </body>
 </html>
