@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Noto";
-    src: url(/photoshoot/NotoSans-VariableFont_wdth,wght.ttf) format("truetype");
+    src: url(./NotoSans.ttf) format("truetype");
 }
 
 *{
